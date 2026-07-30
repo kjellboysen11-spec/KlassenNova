@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KlassenNova | Mathe 5. Klasse</title>
+    <link rel="stylesheet" href="/html/faecher/mathe/mathe5klasse/mathe5.css/mathe5ganzelevel1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main class="setup-page">
+        <div class="setup-card">
+            
+            
+            <header class="setup-top">
+                <div class="progress-info">
+                    <span class="progress-label">Fortschritt</span>
+                    <h3 id="progressTxt"><span id="currentStep">0</span> / <span id="totalSteps">10</span></h3>
+                </div>
+                <div id="progressBar" class="progress-bar-track">
+                    <div id="progress" class="progress-bar-fill" style="width: 0%;"></div>
+                </div>
+            </header>
+
+            <!-- Hauptbereich für Aufgaben -->
+            <section class="setup-action">
+                <div class="task-header">
+                    <span class="badge" id="taskTitle">Addition</span>
+                </div>
+
+                <div class="setup-content-box">
+                    <div class="setup-content">
+                        <h2 id="aufgabenText">48 + 19 = _____</h2>
+                    </div>
+                </div>
+
+                <div class="action">
+                    <div class="setup-aufgaben">
+                        <h4>Antwort wählen</h4>
+                        <div class="task-inputs">
+                            <button type="button" id="submitBtn1" class="btn-aufgabe">00</button>
+                            <button type="button" id="submitBtn2" class="btn-aufgabe">00</button>
+                            <button type="button" id="submitBtn3" class="btn-aufgabe">00</button>
+                            <button type="button" id="submitBtn4" class="btn-aufgabe">00</button>
+                            <button type="button" id="submitBtn5" class="btn-aufgabe" hidden>Weiter</button>
+                            <button type="button" id="submitBtn6" class="btn-aufgabe" hidden>Wiederholen</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer-Navigation -->
+            <footer class="setup-footer">
+                <button type="button" id="prevBtn" class="btn btn-secondary">Zurück</button>
+                <button type="button" id="nextBtn" class="btn btn-primary">Überspringen</button>
+            </footer>
+
+        </div>
+    </main>
+
+    <script src="/html/faecher/mathe/mathe5klasse/mathe5.js/mathe5ganzelevel1.js"></script>
+
+</body>
+</html>

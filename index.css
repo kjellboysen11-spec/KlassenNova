@@ -1,0 +1,375 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    min-height: 100%;
+}
+
+.topBar {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+
+    background: rgba(20, 20, 20, 0.4); 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px); 
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.topBarLogoText {
+    border: 1px solid transparent;
+    width: 300px;
+    height: 60px;
+    display: flex;
+}
+
+.topBarLogoImg {
+    width: 70px;
+    height: 70px;
+}
+
+.topBarText {
+    border: 1px solid transparent;
+    width: 130px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -5px;
+}
+
+.topBarLogoTxt {
+    color: white;
+    font-family: sans-serif;
+    margin-left: 0;
+    margin-top: 20px;
+}
+
+.topBarButtons {
+    border: 1px solid transparent;
+    width: 600px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin-left: 648px;
+}
+
+.topBarButtonsGrey {
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background: rgb(58, 58, 58);
+    width: 80px;
+    height: 35px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.topBarButtonsGrey:hover {
+    width: 83px;
+    height: 38px;
+    background: rgb(50, 50, 50);
+}
+
+.topBarButtonsDashboard {
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background: rgb(79, 79, 255);
+    width: 100px;
+    height: 35px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    margin-left: 80px;
+}
+
+.topBarButtonsDashboard:hover {
+    width: 103px;
+    height: 38px;
+    background: rgb(66, 66, 206);
+}
+
+/* page1 */
+
+.page1 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #000000;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px; 
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.page1::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background-image:
+        radial-gradient(circle at 5% 25%, rgba(25, 45, 120, 0.28) 0%, transparent 28%),
+        radial-gradient(circle at 95% 75%, rgba(25, 45, 120, 0.25) 0%, transparent 28%);
+    filter: blur(55px);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+.page1 > * {
+    position: relative;
+    z-index: 1;
+}
+
+.mittePage1 {
+    border: 1px solid transparent;
+    width: 800px;
+    height: 400px;
+}
+
+.txtMittePage1 {
+    border: 1px solid transparent;
+    width: 100%;
+    height: 300px;
+}
+
+.h1TxtMittePage1 {
+    border: 1px solid transparent;
+    width: 80%;
+    height: 200px;
+    margin-left: 10%;
+}
+
+.h1Txt1MittePage1Box {
+    border: 1px solid transparent;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: sans-serif;
+    font-size: 30px;
+    margin-top: 60px;
+}
+
+.h1Txt2MittePage1Box {
+    border: 1px solid transparent;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+.txtTxtMittePage1 {
+    border: 1px solid transparent;
+    width: 70%;
+    height: 100px;
+    margin-left: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.pTxtTxtMittePage1 {
+    color: rgb(164, 164, 164);
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.blockButtonsMittePage1 {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.buttonsMittePage1 {
+    border: 1px solid transparent;
+    width: 42%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.inviteButtonsMittePage1 {
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background: rgb(79, 79, 255);
+    width: 170px;
+    height: 40px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.inviteButtonsMittePage1:hover {
+    width: 175px;
+    height: 45px;
+    margin-top: -2.5px;
+    background: rgb(66, 66, 206);
+}
+
+.dashboardButtonsMittePage1 {
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background: white;
+    width: 170px;
+    height: 40px;
+    color: black;
+    font-family: sans-serif;
+    font-weight: 700;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.dashboardButtonsMittePage1:hover {
+    width: 175px;
+    height: 45px;
+    margin-top: -2.5px;
+    background: rgb(226, 226, 226);
+}
+
+/* Page2 */
+.page2 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #000000;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px; 
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.page2::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background-image:
+        radial-gradient(circle at 5% 25%, rgba(25, 45, 120, 0.28) 0%, transparent 28%),
+        radial-gradient(circle at 95% 75%, rgba(25, 45, 120, 0.25) 0%, transparent 28%);
+    filter: blur(55px);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+.page2FunktionenBlock {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+ 
+    position: relative;
+    z-index: 1;
+    width: 1200px;
+    height: 550px;
+    margin-top: -20px;
+}
+
+.page2Funktionen {
+    border: 1px solid transparent;
+    width: 100%;
+    height: 480px;
+}
+
+.page2FunktionenOben {
+    border: 1px solid transparent;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.page2FunktionenTab {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    background: #1a1a1a6d;
+    width: 200px;
+    height: 200px;
+    margin-left: 30px
+}
+
+.page2FunktionenTabTop {
+    border: 1px solid transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page2FunktionenTabTopH3 {
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+.page2FunktionenUnten {
+    border: 1px solid transparent;
+    width: 200px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page2FunktionenTabTopP {
+    color: rgb(165, 165, 165);
+    font-family: sans-serif;
+    text-align: left;
+    font-weight: 500;
+    margin-left: 8px;
+}
+
+.page2FunktionenUUnten {
+    border: 1px solid transparent;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.page2FunktionenButtonBlock {
+    border: 1px solid transparent;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page2FunktionenButton {
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background: rgb(79, 79, 255);
+    width: 200px;
+    height: 40px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.page2FunktionenButton:hover {
+    width: 205px;
+    height: 45px;
+    background: rgb(66, 66, 206);
+}

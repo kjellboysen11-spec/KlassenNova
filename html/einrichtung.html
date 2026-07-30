@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KlassenNova / Einrichtung</title>
+    <link rel="stylesheet" href="/css/einrichtung.css">
+</head>
+<body>
+    <main class="setup-page">
+        <section class="setup-card">
+            <header class="setup-header">
+                <div class="setup-brand">
+                    <img src="/img/logo.png" alt="KlassenNova Logo" class="setup-logo">
+                    <h1 class="setup-title">Einrichtung</h1>
+                </div>
+                <div class="setup-avatar" aria-label="Aktueller Nutzer">A</div>
+            </header>
+
+            <div class="setup-content">
+                <section class="setup-panel">
+                    <div class="setup-panel-header">
+                        <h2 class="setup-panel-title">Persönliche Informationen</h2>
+                    </div>
+
+                    <div class="setup-panel-body">
+                        <div class="setup-field">
+                            <label class="setup-label" for="username">Wähle einen Benutzernamen</label>
+                            <input id="username" type="text" placeholder="Benutzername" class="setup-input">
+                        </div>
+
+                        <div class="setup-field">
+                            <p class="setup-label">Wähle dein Alter</p>
+                            <div class="setup-age-options">
+                                <label class="setup-age-option">
+                                    <button type="button" class="setup-age-button"></button>
+                                    <span>6+</span>
+                                </label>
+                                <label class="setup-age-option">
+                                    <button type="button" class="setup-age-button"></button>
+                                    <span>12+</span>
+                                </label>
+                                <label class="setup-age-option">
+                                    <button type="button" class="setup-age-button"></button>
+                                    <span>16+</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="setup-panel-header" id="setup-panel-header-2">
+                        <h2 class="setup-panel-title">Weitere Informationen</h2>
+                    </div>
+
+                    <div class="setup-panel-body">
+                        <div class="setup-field">
+                            <label class="setup-label" for="klassenstufe">In welcher Klassen Stufe bist du?</label>
+                            <select name="klassenstufe" id="klassenstufe">
+                                <option value="" class="klassenstufe-option">Wähle eine Klassenstufe</option>
+                                <option value="1" class="klassenstufe-option">5. Klasse</option>
+                                <option value="2" class="klassenstufe-option">6. Klasse</option>
+                                <option value="3" class="klassenstufe-option">7. Klasse</option>
+                                <option value="4" class="klassenstufe-option">8. Klasse</option>
+                                <option value="5" class="klassenstufe-option">9. Klasse</option>
+                                <option value="6" class="klassenstufe-option">10. Klasse</option>
+                            </select>
+                        </div>
+
+                        <div class="setup-field">
+                            <p class="setup-label">Wie viele Stunden möchtest du pro Tag lernen?</p>
+                            <div class="setup-age-options">
+                                <select name="unterrichtsdauer" id="unterrichtsdauer">
+                                    <option value="" class="unterrichtsdauer-option">Wähle die Unterrichtsdauer</option>
+                                    <option value="1" class="unterrichtsdauer-option">30 min</option>
+                                    <option value="2" class="unterrichtsdauer-option">45 min</option>
+                                    <option value="3" class="unterrichtsdauer-option">1 Stunde</option>
+                                    <option value="4" class="unterrichtsdauer-option">3 Stunden</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="setup-panel-body">
+                        <div class="setup-field">
+                            <label class="setup-label" for="TageProWoche">Wie viele Tage pro Woche möchtest du lernen?</label>
+                            <select name="TageProWoche" id="tageprowoche">
+                                <option value="" class="tageprowoche-option">Wähle die Anzahl der Tage</option>
+                                <option value="1" class="tageprowoche-option">1 Tag</option>
+                                <option value="2" class="tageprowoche-option">2 Tage</option>
+                                <option value="3" class="tageprowoche-option">3 Tage</option>
+                                <option value="4" class="tageprowoche-option">4 Tage</option>
+                                <option value="5" class="tageprowoche-option">5 Tage</option>
+                                <option value="6" class="tageprowoche-option">6 Tage</option>
+                                <option value="7" class="tageprowoche-option">7 Tage</option>
+                            </select>
+                        </div>
+
+                        <div class="setup-field">
+                            <p class="setup-label">Welche Fächer Sollen angepinnt werden?</p>
+                            <div class="setup-age-options">
+                                <label><input type="checkbox" id="fach1"> Mathematik</label>
+                                <label><input type="checkbox" id="fach2"> Deutsch</label>
+                                <label><input type="checkbox" id="fach3"> Englisch</label>
+                                <label><input type="checkbox" id="fach4"> Naturwissenschaften</label>
+                                <label><input type="checkbox" id="fach5"> Chemie</label>
+                                <label><input type="checkbox" id="fach6"> Weltkunde</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="setup-panel-header" id="setup-panel-header-2">
+                        <h2 class="setup-panel-title">Abschließen</h2>
+                    </div>
+                    <div class="end-field">
+                            <p class="end-label">Ich bestätige:</p>
+                            <div class="end-bestätigung-options">
+                                <label><input type="checkbox" id="bestaetigung1"> Das ich denn Gewählten Benutzernamen Erst in 7 Tagen Wieder ändern kann.</label>
+                                <label><input type="checkbox" id="bestaetigung2"> Das ich die <a href="#" target="_blank">Nutzungsbedingungen</a> gelessen habe und akzeptiere.</label>
+                            </div>
+                            <div class="setup-button-container">
+                                <button class="end-button" id="end-button">Einrichtung abschließen</button>
+                            </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

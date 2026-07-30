@@ -1,0 +1,320 @@
+:root {
+    color-scheme: dark;
+    --page-bg: #05070d;
+    --card-bg: rgba(18, 24, 38, 0.9);
+    --panel-bg: rgba(255, 255, 255, 0.04);
+    --border-color: rgba(255, 255, 255, 0.12);
+    --text-color: #f5f7fb;
+    --muted-color: rgba(255, 255, 255, 0.72);
+    --accent-blue: #1b3a72;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    background-color: var(--page-bg);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+}
+
+.setup-page {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    background-color: var(--page-bg);
+    overflow: hidden;
+}
+
+.setup-page::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background-image:
+        radial-gradient(circle at 5% 25%, rgba(25, 45, 120, 0.28) 0%, transparent 28%),
+        radial-gradient(circle at 95% 75%, rgba(25, 45, 120, 0.25) 0%, transparent 28%);
+    filter: blur(55px);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+.setup-page > * {
+    position: relative;
+    z-index: 1;
+}
+
+.setup-card {
+    width: min(1100px, 100%);
+    min-height: 80vh;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    background: var(--card-bg);
+    overflow: hidden;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+}
+
+.setup-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 24px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.setup-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.setup-logo {
+    width: 64px;
+    height: 64px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.setup-title {
+    margin: 0;
+    font-size: clamp(1.1rem, 2vw, 1.35rem);
+    font-weight: 600;
+}
+
+.setup-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: orangered;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.setup-content {
+    padding: 24px;
+}
+
+.setup-panel {
+    width: min(860px, 100%);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    background: var(--panel-bg);
+    padding: 24px;
+}
+
+.setup-panel-header {
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.setup-panel-title {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.setup-panel-body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding-top: 20px;
+    align-content: flex-start;
+}
+
+.setup-field {
+    flex: 1 1 280px;
+    min-width: 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.setup-label {
+    margin: 0;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.setup-input {
+    width: 100%;
+    max-width: 320px;
+    height: 44px;
+    padding: 0 12px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--text-color);
+}
+
+.setup-input::placeholder {
+    color: var(--muted-color);
+}
+
+.setup-age-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.setup-age-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-color);
+}
+
+.setup-age-button {
+    position: relative;
+    width: 34px;
+    height: 34px;
+    border: 2px solid #2e2e2e;
+    border-radius: 50%;
+    background: #222222;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15);
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.setup-age-button::before {
+    content: "";
+    position: absolute;
+    inset: 7px;
+    border-radius: 50%;
+    background: #ffffff;
+    transition: background 0.2s ease;
+}
+
+.setup-age-button:hover {
+    background: #2e2e2e;
+    transform: translateY(-1px);
+}
+
+.setup-age-button:focus,
+.setup-age-button:active {
+    outline: none;
+    background: #222222;
+}
+
+.setup-age-button:focus::before,
+.setup-age-button:active::before {
+    background: var(--accent-blue);
+}
+
+#klassenstufe {
+    width: 100%;
+    max-width: 320px;
+    height: 44px;
+    padding: 0 12px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--text-color);
+}
+
+.klassenstufe-option {
+    color: black;
+    background: grey;
+}
+
+#unterrichtsdauer {
+    width: 100%;
+    max-width: 320px;
+    height: 44px;
+    padding: 0 12px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--text-color);
+}
+
+.unterrichtsdauer-option {
+    color: black;
+    background: grey;
+}
+
+#tageprowoche {
+    width: 100%;
+    max-width: 320px;
+    height: 44px;
+    padding: 0 12px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--text-color);
+}
+
+.tageprowoche-option {
+    color: black;
+    background: grey;
+}
+
+#setup-panel-header-2 {
+    margin-top: 24px;
+}
+
+.end-label {
+    margin: 0;
+    color: #ffffff;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.end-bestätigung-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.end-button {
+    margin-top: 16px;
+    height: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .setup-page {
+        padding: 16px;
+        align-items: flex-start;    
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .setup-card {
+        min-height: auto !important;  
+        height: auto !important;
+    }
+
+    .setup-content {
+        padding: 16px;
+    }
+
+    .setup-panel {
+        padding: 16px;
+        height: auto !important;
+    }
+
+    .setup-panel-body {
+        display: block !important;   
+    }
+
+    .setup-field {
+        width: 100% !important;
+        margin-bottom: 20px;          
+    }
+
+    .setup-input {
+        max-width: none;
+    }
+}
