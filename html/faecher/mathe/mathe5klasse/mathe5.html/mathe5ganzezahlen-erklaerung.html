@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KlassenNova | Mathe 5. Klasse - Erklärung</title>
+    <link rel="stylesheet" href="/html/faecher/mathe/mathe5klasse/mathe5.css/mathe5ganzelevel1.css">
+    <link rel="stylesheet" href="/html/faecher/mathe/mathe5klasse/mathe5.css/mathe5ganzezahlen-erklaerung.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main class="setup-page">
+        <div class="setup-card erklaerung-card">
+
+            <header class="setup-top">
+                <div class="progress-info">
+                    <span class="progress-label">Lektion</span>
+                    <h3>Ganze Zahlen: Plus &amp; Minus</h3>
+                </div>
+            </header>
+
+            <section class="setup-action erklaerung-content">
+
+                <div class="task-header">
+                    <span class="badge">Erklärung</span>
+                </div>
+
+                <div class="lesson-block">
+                    <h2>Addition mit Übertrag</h2>
+                    <p>
+                        Wenn du zwei Zahlen addierst, rechnest du von rechts nach links,
+                        also erst die Einer, dann die Zehner, dann die Hunderter.
+                        Wird eine Spalte größer als 9, schreibst du nur die letzte Ziffer auf
+                        und "trägst" die 1 in die nächste Spalte über.
+                    </p>
+
+                    <div class="example-box">
+                        <div class="example-title">Beispiel: 48 + 19</div>
+                        <div class="steps">
+                            <div class="step">
+                                <span class="step-num">1</span>
+                                <span class="step-text">Einer: 8 + 9 = 17 → schreibe <strong>7</strong>, trage <strong>1</strong> über</span>
+                            </div>
+                            <div class="step">
+                                <span class="step-num">2</span>
+                                <span class="step-text">Zehner: 4 + 1 + <em>übertragene 1</em> = 6</span>
+                            </div>
+                            <div class="step result-step">
+                                <span class="step-num">✓</span>
+                                <span class="step-text">Ergebnis: <strong>67</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lesson-block">
+                    <h2>Subtraktion mit Entbündeln</h2>
+                    <p>
+                        Bei der Subtraktion rechnest du ebenfalls von rechts nach links.
+                        Ist die obere Ziffer kleiner als die untere, kannst du dort nicht
+                        einfach abziehen. Dann leihst du dir eine 1 von der nächsten Spalte —
+                        das nennt man <strong>entbündeln</strong>. Die 1, die du dir leihst,
+                        ist zehn Einer wert.
+                    </p>
+
+                    <div class="example-box">
+                        <div class="example-title">Beispiel: 93 - 29</div>
+                        <div class="steps">
+                            <div class="step">
+                                <span class="step-num">1</span>
+                                <span class="step-text">Einer: 3 - 9 geht nicht → leihe dir 1 Zehner, aus 3 wird 13</span>
+                            </div>
+                            <div class="step">
+                                <span class="step-num">2</span>
+                                <span class="step-text">13 - 9 = 4</span>
+                            </div>
+                            <div class="step">
+                                <span class="step-num">3</span>
+                                <span class="step-text">Zehner: 9 wurde zu 8 (weil du dir was geliehen hast), also 8 - 2 = 6</span>
+                            </div>
+                            <div class="step result-step">
+                                <span class="step-num">✓</span>
+                                <span class="step-text">Ergebnis: <strong>64</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lesson-tip">
+                    <strong>Tipp:</strong> Du kannst dein Ergebnis immer gegenprüfen:
+                    Bei Plus rechnest du danach Minus (67 − 19 = 48), bei Minus rechnest
+                    du danach Plus (64 + 29 = 93). Kommt die Ausgangszahl raus, hast du
+                    richtig gerechnet.
+                </div>
+
+            </section>
+
+            <footer class="setup-footer">
+                <button type="button" id="prevBtn" class="btn btn-secondary">Zurück</button>
+                <button type="button" id="startBtn" class="btn btn-primary">Zu den Aufgaben</button>
+            </footer>
+
+        </div>
+    </main>
+
+    <script src="/html/faecher/mathe/mathe5klasse/mathe5.js/mathe5ganzezahlen-erklaerung.js"></script>
+
+</body>
+</html>

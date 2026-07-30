@@ -5,11 +5,12 @@ function button() {
     const btn4 = document.getElementById("auswahl4");
     const btn5 = document.getElementById("auswahl5");
 
-    const zielPfad1 = "/html/faecher/mathe/mathe5klasse/mathe5.html/mathe5ganzelevel1.html";
+    const zielPfad1 = "/html/faecher/mathe/mathe5klasse/mathe5.html/mathe5ganzezahlen-erklaerung.html";
     const zielPfad2 = "/html/faecher/mathe/mathe5klasse/mathe5.html/mathe5ganzelevel1.html";
     const zielPfad3 = "/html/faecher/mathe/mathe5klasse/mathe5.html/mathe5ganzelevel2.html";
-    const zielPfad4 = "/html/faecher/mathe/mathe5klasse/mathe5.html/mathe5ganzelevel1.html";
-    const zielPfad5 = "/html/faecher/mathe/mathe5klasse/mathe5.html/mathe5ganzelevel1.html";
+    const zielPfad4 = "/html/faecher/mathe/mathe5klasse/mathe5.html/mathe5ganzelevel3.html";
+    const zielPfad5 = "/html/faecher/mathe/mathe5klasse/mathe5.html/mathe5ganzetest.html";
+
 
     if (btn1) {
         btn1.onclick = () => { window.location.href = zielPfad1; };

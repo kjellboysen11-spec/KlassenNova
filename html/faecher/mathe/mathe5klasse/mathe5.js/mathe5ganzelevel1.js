@@ -40,6 +40,35 @@ function checkAnswer(selectedAnswer, correctAnswer, nextTaskFunction) {
     }
 }
 
+const tasksList = [
+    aufgabe1, aufgabe2, aufgabe3, aufgabe4, aufgabe5,
+    aufgabe6, aufgabe7, aufgabe8, aufgabe9, aufgabe10
+];
+
+function goToPreviousTask() {
+    if (progress > 0) {
+        progress--;
+        updateProgressUI();
+        tasksList[progress]();
+    }
+}
+
+function skipTask() {
+    if (progress < totalTasks) {
+        progress++;
+        updateProgressUI();
+
+        if (progress < totalTasks) {
+            tasksList[progress]();
+        } else {
+            showResults();
+        }
+    }
+}
+
+document.getElementById("prevBtn").onclick = goToPreviousTask;
+document.getElementById("nextBtn").onclick = skipTask;
+
 function aufgabe1() {
     const correctAnswer = 67;
     
