@@ -3,6 +3,7 @@ html, body {
     padding: 0;
     background-color: #1a1a1a;
     min-height: 100%;
+    overflow-x: hidden;
 }
 
 .topBar {
@@ -26,11 +27,14 @@ html, body {
     width: 300px;
     height: 60px;
     display: flex;
+    align-items: center;
 }
 
 .topBarLogoImg {
-    width: 70px;
-    height: 70px;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
 }
 
 .topBarText {
@@ -40,7 +44,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: -5px;
+    margin-left: 20px;
 }
 
 .topBarLogoTxt {
@@ -275,101 +279,56 @@ html, body {
 }
 
 .page2FunktionenBlock {
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.1);
     border-radius: 30px;
+    background: black;
  
     position: relative;
     z-index: 1;
     width: 1200px;
     height: 550px;
     margin-top: -20px;
+    overflow: hidden;
 }
 
-.page2Funktionen {
-    border: 1px solid transparent;
+.klassennovavorschau {
+    width: 1200px;
+}
+
+.footer-bottom {
+    border: 1px solid black;
+    background: black;
     width: 100%;
-    height: 480px;
-}
-
-.page2FunktionenOben {
-    border: 1px solid transparent;
-    width: 100%;
-    height: 50%;
-    display: flex;
-    align-items: center;
-}
-
-.page2FunktionenTab {
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    background: #1a1a1a6d;
-    width: 200px;
-    height: 200px;
-    margin-left: 30px
-}
-
-.page2FunktionenTabTop {
-    border: 1px solid transparent;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.page2FunktionenTabTopH3 {
-    color: white;
-    font-family: sans-serif;
-    font-weight: 700;
-}
-
-.page2FunktionenUnten {
-    border: 1px solid transparent;
-    width: 200px;
-    height: 140px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.page2FunktionenTabTopP {
-    color: rgb(165, 165, 165);
-    font-family: sans-serif;
-    text-align: left;
-    font-weight: 500;
-    margin-left: 8px;
-}
-
-.page2FunktionenUUnten {
-    border: 1px solid transparent;
-    width: 100%;
-    height: 50%;
-    display: flex;
-    align-items: center;
-}
-
-.page2FunktionenButtonBlock {
-    border: 1px solid transparent;
-    width: 100%;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.page2FunktionenButton {
-    border: 1px solid transparent;
-    border-radius: 5px;
-    background: rgb(79, 79, 255);
-    width: 200px;
     height: 40px;
-    color: white;
-    font-family: sans-serif;
-    font-weight: 700;
-    cursor: pointer;
 }
 
-.page2FunktionenButton:hover {
-    width: 205px;
-    height: 45px;
-    background: rgb(66, 66, 206);
+.copyright {
+    width: 100%;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 60px;
+}
+
+.copyright-box {
+    border: 1px solid transparent;
+    width: 300px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 10px;
+    gap: 25px;
+}
+
+.copyright-a {
+    color: white;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-decoration: none;
 }

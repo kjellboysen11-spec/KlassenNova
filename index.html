@@ -10,16 +10,16 @@
     
   <div class="topBar">
         <div class="topBarLogoText">
-            <img src="/img/onlylogo.png" class="topBarLogoImg">
+            <img src="/img/logo.png" class="topBarLogoImg">
             <div class="topBarText">
                 <h2 class="topBarLogoTxt">KlassenNova</h2>
             </div>
         </div>
         <div class="topBarButtons">
-            <button class="topBarButtonsGrey">Home</button>
-            <button class="topBarButtonsGrey" onclick="window.location.href=''">Kontakt</button>
+            <button class="topBarButtonsGrey" id="homeBtn">Home</button>
+            <button class="topBarButtonsGrey" href="/html/kontakt.html">Kontakt</button>
             <button class="topBarButtonsGrey">Über mich</button>
-            <button class="topBarButtonsDashboard">Login</button>
+            <button class="topBarButtonsDashboard" href="/html/login.html" >Login</button>
         </div>
     </div>
 
@@ -35,123 +35,44 @@
                     </div>
                 </div>
                 <div class="txtTxtMittePage1">
-                    <p class="pTxtTxtMittePage1">KlassenNova ist eine Lern Web app würde von Kjell für ein Schul projekt Entwickelt</p>
+                    <p class="pTxtTxtMittePage1" id="home">KlassenNova ist eine Lern Web app.</p>
                 </div>
             </div>
             <div class="blockButtonsMittePage1">
                 <div class="buttonsMittePage1">
-                    <button class="inviteButtonsMittePage1" onclick="window.location.href=''">Login</button>
-                    <button class="dashboardButtonsMittePage1">Funktionen</button>
+                    <button class="inviteButtonsMittePage1" href="/html/login.html">Login</button>
+                    <button class="dashboardButtonsMittePage1" id="vorschauBtn">Vorschau</button>
                 </div>
             </div>
         </div>
     </div>
-
     <div class="page2">
-        <div class="page2FunktionenBlock">
-            <div class="page2Funktionen">
-                <div class="page2FunktionenOben">
+        <div class="page2FunktionenBlock" id="vorschau">
+            <img src="/img/klassennovavorschau.webp" class="klassennovavorschau">
+        </div>
+    </div>
 
-                    <div class="page2FunktionenTab">
-                        <div class="page2FunktionenTabTop">
-                            <h3 class="page2FunktionenTabTopH3">Ticket System 🎫</h3>
-                        </div>
-                        <div class="page2FunktionenUnten">
-                            <p class="page2FunktionenTabTopP">Biete deinen Nutzern ein Ticket System, um ihnen zu Helfen oder Fragen zu Beatworten.</p>
-                        </div>
-                    </div>
-
-                    <div class="page2FunktionenTab">
-                        <div class="page2FunktionenTabTop">
-                            <h3 class="page2FunktionenTabTopH3">Ankündigungen 📢</h3>
-                        </div>
-                        <div class="page2FunktionenUnten">
-                            <p class="page2FunktionenTabTopP">Sende eine Ankündigung in einem Schönen Panel, um deinen Server auf zu werten</p>
-                        </div>
-                    </div>
-
-                    <div class="page2FunktionenTab">
-                        <div class="page2FunktionenTabTop">
-                            <h3 class="page2FunktionenTabTopH3">Moderation 🛠️</h3>
-                        </div>
-                        <div class="page2FunktionenUnten">
-                            <p class="page2FunktionenTabTopP">Erleichtern deinen Moderatoren die Arbeit, mit Moderations Befehlen. alle befehle werden geloggt</p>
-                        </div>
-                    </div>
-
-                    <div class="page2FunktionenTab">
-                        <div class="page2FunktionenTabTop">
-                            <h3 class="page2FunktionenTabTopH3">KI Automod 🤖</h3>
-                        </div>
-                        <div class="page2FunktionenUnten">
-                            <p class="page2FunktionenTabTopP">Schalte die KI Automod Funktion ein, damit dein Server Freundlich und Respektvoll ist. alles was die KI macht wird in deinem channel gelogt.</p>
-                        </div>
-                    </div>
-
-                    <div class="page2FunktionenTab">
-                        <div class="page2FunktionenTabTop">
-                            <h3 class="page2FunktionenTabTopH3">Ideen System 💡</h3>
-                        </div>
-                        <div class="page2FunktionenUnten">
-                            <p class="page2FunktionenTabTopP">Erlaube es deinen Nutzern Ideen für dein Server oder Projekt zu senden, um es zu Verbessern.</p>
-                        </div>
-                    </div>
-                </div>
-
-            <div class="page2FunktionenUUnten">
-                <div class="page2FunktionenTab">
-                    <div class="page2FunktionenTabTop">
-                        <h3 class="page2FunktionenTabTopH3">Giveaway 🎁</h3>
-                    </div>
-                    <div class="page2FunktionenUnten">
-                        <p class="page2FunktionenTabTopP">Gebe deiner Community mit Giveaways etwas zurück, sende ein embed bestimme die gewinner anzahl und die zeit. setze das Geschenk Fest.</p>
-                    </div>
-                </div>
-                
-                <div class="page2FunktionenTab">
-                    <div class="page2FunktionenTabTop">
-                        <h3 class="page2FunktionenTabTopH3">DM ✉️</h3>
-                    </div>
-                    <div class="page2FunktionenUnten">
-                        <p class="page2FunktionenTabTopP">Sende über denn Bot eine Dierekt Naricht, um es Offizeller wirken zu lassen und deine DM Sauber zuhalten.</p>
-                    </div>
-                </div>
-                
-                <div class="page2FunktionenTab">
-                    <div class="page2FunktionenTabTop">
-                        <h3 class="page2FunktionenTabTopH3">Willkomnmen 👋</h3>
-                    </div>
-                    <div class="page2FunktionenUnten">
-                        <p class="page2FunktionenTabTopP">Schalte die Willkommens Nachricht ein, um deine Nutzer in einem Schönen Embed zu Begrüßen.</p>
-                    </div>
-                </div>
-
-                <div class="page2FunktionenTab">
-                    <div class="page2FunktionenTabTop">
-                        <h3 class="page2FunktionenTabTopH3">Teamlist 👥</h3>
-                    </div>
-                    <div class="page2FunktionenUnten">
-                        <p class="page2FunktionenTabTopP">Sende eine Teamlist in einem schönen Embed, um deiner Community zu zeigen wer alles im Team ist.</p>
-                    </div>
-                </div>
-
-                <div class="page2FunktionenTab">
-                    <div class="page2FunktionenTabTop">
-                        <h3 class="page2FunktionenTabTopH3">Im dienst ✅</h3>
-                    </div>
-                    <div class="page2FunktionenUnten">
-                        <p class="page2FunktionenTabTopP">Sende ein Embed, um dir oder deinen Nutzern zu zeigen wer aus deinem Team Gerade online und im Dienst ist.</p>
-                    </div>
-                </div>
+    <div class="footer-bottom">
+        <div class="copyright">
+            <div class="copyright-box">
+                <a href="/html/bilder.html" class="copyright-a">Bilder</a>
+                <a href="/html/schriftarten.html" class="copyright-a">Schriftarten</a>
+                <a href="/html/offenercode.html" class="copyright-a">Offener_Code</a>
             </div>
+            <div class="copyright-box">
+                <a href="/html/agb.html" class="copyright-a">AGB</a>
+                <a href="/html/datenschutz.html" class="copyright-a">Datenschutz</a>
+                <a href="/html/acount.html" class="copyright-a">Acount</a>
             </div>
-
-            <div class="page2FunktionenButtonBlock">
-                <button class="page2FunktionenButton">Alle Funktionen</button>
+            <div class="copyright-box">
+                <a href="/html/uebermich.html" class="copyright-a">Über_mich</a>
+                <a href="/html/ueberprojekt.html" class="copyright-a">Über_Projekt</a>
+                <a href="/html/kontakt.html" class="copyright-a">Kontakt</a>
             </div>
         </div>
-            
-        </div>
+    </div>
+
+    <script src="index.js"></script>
 
 </body>
 </html>
