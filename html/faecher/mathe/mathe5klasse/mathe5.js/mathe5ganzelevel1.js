@@ -337,7 +337,7 @@ function showResults() {
 
     if (btnWeiter) {
         btnWeiter.onclick = () => {
-            window.location.href = "mathe5level2.html";
+            window.location.href = "/html/faecher/mathe/mathe5klasse/mathe5.html/mathe5ganzezahlen.html";
         };
     }
 
