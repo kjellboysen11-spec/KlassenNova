@@ -9,7 +9,7 @@
 <body>
     
    <aside class="setup-page">
-    <div class="setup-card-home" hidden>
+    <div class="setup-card-home" id="homeCard" hidden>
         <div class="setup-header">
             <div class="setup-brand">
                 <img src="/img/logo.png" alt="KlassenNova Logo" class="setup-logo">
@@ -101,7 +101,6 @@
             </div>
         </div>
 
-        <!-- Hier aufgehört -->
 
         <div class="setup-lernziel">
             <div class="setup-lernziel-header">
@@ -121,23 +120,22 @@
 
         <div class="setup-down-bar">
             <div class="setup-down-bar-1">
-                <button class="setup-down-bar-button"><img src="/img/Home-Symbol-Start.png" alt="" class="setup-down-bar-img"></button>
+                <button class="setup-down-bar-button" id="homeButton"><img src="/img/Home-Symbol-Start.png" alt="" class="setup-down-bar-img"></button>
             </div>
             <div class="setup-down-bar-2">
-                <button class="setup-down-bar-button"><img src="/img/Lern-Karten-Symbol-Start.png" alt="" class="setup-down-bar-img"></button>
+                <button class="setup-down-bar-button" id="cardButton"><img src="/img/Lern-Karten-Symbol-Start.png" alt="" class="setup-down-bar-img"></button>
             </div>
             <div class="setup-down-bar-3">
-                <button class="setup-down-bar-button"><img src="/img/Steak-Of-Start.png" alt="" class="setup-down-bar-img"></button>
+                <button class="setup-down-bar-button" id="streakButton"><img src="/img/Steak-Of-Start.png" alt="" class="setup-down-bar-img"></button>
             </div>
             <div class="setup-down-bar-4">
-                <button class="setup-down-bar-button"><img src="/img/Einstellungs-Symbol-Start.png" alt="" class="setup-down-bar-img"></button>
+                <button class="setup-down-bar-button" id="settingsButton"><img src="/img/Einstellungs-Symbol-Start.png" alt="" class="setup-down-bar-img"></button>
             </div>
         </div>
     </div>
 
-    <!--Streak-->
 
-    <div class="setup-card-streak">
+    <div class="setup-card-lernkarten" id="lernCard" hidden>
         <div class="setup-header">
             <div class="setup-brand">
                 <img src="/img/logo.png" alt="KlassenNova Logo" class="setup-logo">
@@ -147,14 +145,256 @@
         </div>
 
         <div class="setup-streak-top-bar">
-
+            <button class="streak-use-btn">Meine Lernkarten v</button>
+            <button class="streak-use-btn">Öffentliche Lernkarten v</button>
         </div>
-        
+
+        <div class="setup-privat-lernkart">
+            <div class="pubic-streak">
+                <div class="public-streak-top">
+                    <div class="public-streak-user"><h4>Name</h4></div>
+                    <div class="public-streak-profil"><div class="profil-public-streaks"><div class="setup-avatar" aria-label="Aktueller Nutzer">A</div></div></div>
+                </div>
+
+                <div class="public-streaks-body">
+                    <div class="public-streaks-left">
+                        
+                    </div>
+                    <div class="public-streaks-right">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="setup-down-bar">
+            <div class="setup-down-bar-1">
+                <button class="setup-down-bar-button" id="homeButton"><img src="/img/Home-Symbol-Start.png" alt="" class="setup-down-bar-img"></button>
+            </div>
+            <div class="setup-down-bar-2">
+                <button class="setup-down-bar-button" id="cardButton"><img src="/img/Lern-Karten-Symbol-Start.png" alt="" class="setup-down-bar-img"></button>
+            </div>
+            <div class="setup-down-bar-3">
+                <button class="setup-down-bar-button" id="streakButton"><img src="/img/Steak-Of-Start.png" alt="" class="setup-down-bar-img"></button>
+            </div>
+            <div class="setup-down-bar-4">
+                <button class="setup-down-bar-button" id="settingsButton"><img src="/img/Einstellungs-Symbol-Start.png" alt="" class="setup-down-bar-img"></button>
+            </div>
+        </div>
     </div>
 
-    
 
+    <div class="setup-card-streak" id="streakCard" hidden>
+        <div class="setup-header">
+            <div class="setup-brand">
+                <img src="/img/logo.png" alt="KlassenNova Logo" class="setup-logo">
+                <h1 class="setup-title">KlassenNova</h1>
+            </div>
+            <div class="setup-avatar" aria-label="Aktueller Nutzer">A</div>
+        </div>
+
+        <div class="setup-streak-top-bar">
+            <button class="streak-use-btn">Öffentliche Streaks v</button>
+            <button class="streak-use-btn">Deine Streaks v</button>
+        </div>
+
+        <div class="setup-public-streaks">
+            <div class="pubic-streak">
+                <div class="public-streak-top">
+                    <div class="public-streak-user"><h4>Name</h4></div>
+                    <div class="public-streak-profil"><div class="profil-public-streaks"><div class="setup-avatar" aria-label="Aktueller Nutzer">A</div></div></div>
+                </div>
+                <div class="public-streaks-body">
+                    <div class="public-streaks-left">
+                        
+                    </div>
+                    <div class="public-streaks-right">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="setup-down-bar">
+            <div class="setup-down-bar-1">
+                <button class="setup-down-bar-button" id="homeButton"><img src="/img/Home-Symbol-Start.png" alt="" class="setup-down-bar-img"></button>
+            </div>
+            <div class="setup-down-bar-2">
+                <button class="setup-down-bar-button" id="cardButton"><img src="/img/Lern-Karten-Symbol-Start.png" alt="" class="setup-down-bar-img"></button>
+            </div>
+            <div class="setup-down-bar-3">
+                <button class="setup-down-bar-button" id="streakButton"><img src="/img/Steak-Of-Start.png" alt="" class="setup-down-bar-img"></button>
+            </div>
+            <div class="setup-down-bar-4">
+                <button class="setup-down-bar-button" id="settingsButton"><img src="/img/Einstellungs-Symbol-Start.png" alt="" class="setup-down-bar-img"></button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="setup-card-settings" id="settingsCard" hidden>
+        <div class="setup-header">
+            <div class="setup-brand">
+                <img src="/img/logo.png" alt="KlassenNova Logo" class="setup-logo">
+                <h1 class="setup-title">KlassenNova</h1>
+            </div>
+            <div class="setup-avatar" aria-label="Aktueller Nutzer">A</div>
+        </div>
+        
+        <div class="settings-body">
+            <div class="settings-tab1">
+                <div class="settings-tab1-top">
+                    <h4>Konto</h4>
+                </div>
+                <div class="settings-tab1-body">
+                    <button class="settings-tab-btn">
+                    <div class="settings-tab-btn-left">
+                        <img src="/img/konto.png" class="settings-tab-btn-img">
+                    </div>
+                    <div class="settings-tab-btn-right">
+                        <div class="settings-tab-btn-top">
+                            <h3>Konto Informationen</h3>
+                        </div>
+                        <div class="settings-tab-btn-bottom">
+                            <p>Email · Erstellungs Datum · Benutzername</p>
+                        </div>
+                    </div>
+                    <div class="settings-tab-btn-right-right">
+                        <h2>></h2>
+                    </div>
+                    </button>
+
+                    <button class="settings-tab-btn">
+                    <div class="settings-tab-btn-left">
+                        <img src="" class="settings-tab-btn-img">
+                    </div>
+                    <div class="settings-tab-btn-right">
+                        <div class="settings-tab-btn-top">
+                            <h3>Passwort</h3>
+                        </div>
+                        <div class="settings-tab-btn-bottom">
+                            <p>Passwort Ändern · 2FA</p>
+                        </div>
+                    </div>
+                    <div class="settings-tab-btn-right-right">
+                        <h2>></h2>
+                    </div>
+                    </button>
+                </div>
+                </div>
+
+            <div class="settings-tab1">
+                <div class="settings-tab1-top">
+                    <h4>App</h4>
+                </div>
+                <div class="settings-tab1-body">
+
+                    <button class="settings-tab-btn">
+                    <div class="settings-tab-btn-left">
+                        <img src="" class="settings-tab-btn-img">
+                    </div>
+                    <div class="settings-tab-btn-right">
+                        <div class="settings-tab-btn-top">
+                            <h3>Klassen</h3>
+                        </div>
+                        <div class="settings-tab-btn-bottom">
+                            <p>Klasse Anzeigen · Klasse Ändern</p>
+                        </div>
+                    </div>
+                    <div class="settings-tab-btn-right-right">
+                        <h2>></h2>
+                    </div>
+                    </button>
+
+                    <button class="settings-tab-btn">
+                    <div class="settings-tab-btn-left">
+                        <img src="" class="settings-tab-btn-img">
+                    </div>
+                    <div class="settings-tab-btn-right">
+                        <div class="settings-tab-btn-top">
+                            <h3>Fächer</h3>
+                        </div>
+                        <div class="settings-tab-btn-bottom">
+                            <p>Angepinnte Fächer</p>
+                        </div>
+                    </div>
+                    <div class="settings-tab-btn-right-right">
+                        <h2>></h2>
+                    </div>
+                    </button>
+
+                    <button class="settings-tab-btn">
+                    <div class="settings-tab-btn-left">
+                        <img src="" class="settings-tab-btn-img">
+                    </div>
+                    <div class="settings-tab-btn-right">
+                        <div class="settings-tab-btn-top">
+                            <h3>App Darstellung</h3>
+                        </div>
+                        <div class="settings-tab-btn-bottom">
+                            <p>Dunkles Theme · Helles Theme</p>
+                        </div>
+                    </div>
+                    <div class="settings-tab-btn-right-right">
+                        <h2>></h2>
+                    </div>
+                    </button>
+
+                    <button class="settings-tab-btn">
+                    <div class="settings-tab-btn-left">
+                        <img src="" class="settings-tab-btn-img">
+                    </div>
+                    <div class="settings-tab-btn-right">
+                        <div class="settings-tab-btn-top">
+                            <h3>Benachrichtigungen</h3>
+                        </div>
+                        <div class="settings-tab-btn-bottom">
+                            <p>Push Nachrichten · Email Benachrichtigungen</p>
+                        </div>
+                    </div>
+                    <div class="settings-tab-btn-right-right">
+                        <h2>></h2>
+                    </div>
+                    </button>
+
+                    <button class="settings-tab-btn">
+                    <div class="settings-tab-btn-left">
+                        <img src="" class="settings-tab-btn-img">
+                    </div>
+                    <div class="settings-tab-btn-right">
+                        <div class="settings-tab-btn-top">
+                            <h3>Datenschutz</h3>
+                        </div>
+                        <div class="settings-tab-btn-bottom">
+                            <p>Datenschutz · Deine Daten</p>
+                        </div>
+                    </div>
+                    <div class="settings-tab-btn-right-right">
+                        <h2>></h2>
+                    </div>
+                    </button>
+
+                </div>
+                </div>
+            </div>
+            <div class="setup-down-bar">
+            <div class="setup-down-bar-1">
+                <button class="setup-down-bar-button" id="homeButton"><img src="/img/Home-Symbol-Start.png" alt="" class="setup-down-bar-img"></button>
+            </div>
+            <div class="setup-down-bar-2">
+                <button class="setup-down-bar-button" id="cardButton"><img src="/img/Lern-Karten-Symbol-Start.png" alt="" class="setup-down-bar-img"></button>
+            </div>
+            <div class="setup-down-bar-3">
+                <button class="setup-down-bar-button" id="streakButton"><img src="/img/Steak-Of-Start.png" alt="" class="setup-down-bar-img"></button>
+            </div>
+            <div class="setup-down-bar-4">
+                <button class="setup-down-bar-button" id="settingsButton"><img src="/img/Einstellungs-Symbol-Start.png" alt="" class="setup-down-bar-img"></button>
+            </div>
+        </div>
+        </div>
+    </div>
    </aside> 
+
+   <script src="/js/start.js"></script>
 
 </body>
 </html>
