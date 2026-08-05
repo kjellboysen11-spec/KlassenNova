@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "kjellboysen11@gmail.com",
+      "password": "$2a$10$J37OFbCcdNKHB026bsYOTuH1xgHI7.85GNXnXVtKUr1iccncCgW0K",
+      "isAdmin": true,
+      "createdAt": "2026-08-04T14:56:14.043Z"
+    },
+    {
+      "id": 2,
+      "email": "test@test.de",
+      "password": "$2a$10$vRdjidzCZ1KoivbvC/D5BeBn8OISUKoV0JNajVzL0ziFT6qwcwtUK",
+      "isAdmin": false,
+      "createdAt": "2026-08-04T15:07:47.520Z"
+    }
+  ],
+  "nextId": 3
+}

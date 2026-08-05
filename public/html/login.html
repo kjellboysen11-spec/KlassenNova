@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KlassenNova / Login</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+    
+    <div class="background">
+        <div class="loginBlock">
+            <div class="loginBlockTop">
+                <h1 class="loginBlockTopLogin">Login</h1>
+            </div>
+            <form id="loginForm">
+            <div class="loginBlockInputs">
+                <div class="loginBlockInputsEmailBlock">
+                    <input type="email" name="email" id="email" placeholder="Email..." class="loginBlockInputsEmail" required>
+                </div>
+                <div class="loginBlockInputsPasswortBlock">
+                    <input type="password" name="password" id="password" placeholder="Passwort..." class="loginBlockInputsPasswort" required>
+                </div>
+                <div class="loginBlockError" id="loginError"></div>
+            </div>
+            <div class="loginBlockButttons"> 
+                <div class="loginBlockButttonsBlock"> 
+                    <div class="loginBlockButttonsLogin"> 
+                        <button type="submit" class="loginBlockButttonsLoginDesign">Login</button>
+                    </div> 
+                    <div class="loginBlockButttonsGoogle">
+                        <button type="button" class="loginBlockButttonsGoogleDesign"><img src="/img/googlelogo.png" class="google-logo">Google</button>
+                    </div>
+                </div>
+            </div>
+            </form>
+            <div class="loginBlockTxt">
+                <p>Du hast noch kein Konto <a href="/html/registrieren.html" class="loginBlockTxtA">Registrieren</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/login.js"></script>
+
+</body>
+</html>

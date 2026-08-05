@@ -101,8 +101,6 @@ html, body {
     background: rgb(66, 66, 206);
 }
 
-/* page1 */
-
 .page1 {
     width: 100%;
     height: 100vh;
@@ -114,7 +112,6 @@ html, body {
     align-items: center;
     padding-top: 60px; 
     box-sizing: border-box;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .page1::before {
@@ -250,19 +247,16 @@ html, body {
     background: rgb(226, 226, 226);
 }
 
-/* Page2 */
 .page2 {
     width: 100%;
-    height: 100vh;
+    height: 35vh;
     position: relative;
     background-color: #000000;
     overflow: hidden;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding-top: 60px; 
+    align-items: center; 
     box-sizing: border-box;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .page2::before {
@@ -276,6 +270,87 @@ html, body {
     filter: blur(55px);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
+}
+
+.funktionen {
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+    width: 99%;
+    height: 34vh;
+
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.funktion {
+    border: 1px solid transparent;
+    background: rgba(10, 10, 10, 0.336);
+    width: 340px;
+    height: 34vh;
+    display: flex;
+}
+
+.funktion-img {
+    border: 1px solid transparent;
+    border-radius: 50px;
+    width: 130px;
+    height: 34vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.funktion-bild {
+    width: 180px;
+}
+
+.funktion-txt {
+    border: 1px solid transparent;
+    width: 100%;
+    height: 34vh;
+}
+
+.funktion-top {
+    border: 1px solid transparent;
+    width: 100%;
+    height: 8vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-family: sans-serif;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-right: 20px;
+}
+
+.funktion-p {
+    border: 1px solid transparent;
+    width: 80%;
+    height: 16vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: rgb(164, 164, 164);
+    font-family: sans-serif;
+
+    margin-top: 10px;
+    margin-left: 10%;
+
+}
+
+.funktion-line {
+    border: 1px solid rgba(255, 255, 255, 0.062);
+    width: 0px;
+    height: 24vh;
+
+    margin-top: 5vh;
 }
 
 .page2FunktionenBlock {

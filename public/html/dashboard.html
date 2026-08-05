@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KlassenNova / Dashboard</title>
+    <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+
+    <div class="adminWrap">
+        <div class="adminHeader">
+            <h1>Willkommen</h1>
+            <div class="adminHeaderRight">
+                <span id="userEmail"></span>
+                <button id="logoutBtn" class="logoutBtn">Logout</button>
+            </div>
+        </div>
+        <p style="color: rgba(255,255,255,0.6);">Du bist eingeloggt. Hier kannst du dein Dashboard weiterbauen.</p>
+    </div>
+
+    <script>
+        fetch('/api/me').then(r => {
+            if (!r.ok) { window.location.href = '/html/login.html'; return; }
+            return r.json();
+        }).then(data => {
+            if (data) document.getElementById('userEmail').textContent = data.email;
+        });
+
+        document.getElementById('logoutBtn').addEventListener('click', async () => {
+            await fetch('/api/logout', { method: 'POST' });
+            window.location.href = '/html/login.html';
+        });
+    </script>
+
+</body>
+</html>

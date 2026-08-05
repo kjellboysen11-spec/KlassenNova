@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KlassenNova / Admin</title>
+    <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+
+    <div class="adminWrap">
+        <div class="adminHeader">
+            <h1>Admin Dashboard</h1>
+            <div class="adminHeaderRight">
+                <span id="adminEmail"></span>
+                <button id="logoutBtn" class="logoutBtn">Logout</button>
+            </div>
+        </div>
+
+        <div class="adminStats">
+            <div class="statCard">
+                <span class="statLabel">User gesamt</span>
+                <span class="statValue" id="totalUsers">-</span>
+            </div>
+            <div class="statCard">
+                <span class="statLabel">Admins</span>
+                <span class="statValue" id="totalAdmins">-</span>
+            </div>
+        </div>
+
+        <div class="adminTableWrap">
+            <table class="adminTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Email</th>
+                        <th>Rolle</th>
+                        <th>Registriert am</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="userTableBody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="/js/admin.js"></script>
+
+</body>
+</html>
